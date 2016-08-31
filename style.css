@@ -1,0 +1,16 @@
+input {
+  display: block;
+  width: 100%;
+}
+textarea {
+  height: 25em;
+  width: 100%;
+}
+.controls {
+  width: 50%;
+  float: left;
+}
+img {
+  margin: 5em;
+  border: 1px solid black;
+}
