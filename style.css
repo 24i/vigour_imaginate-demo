@@ -7,10 +7,19 @@ textarea {
   width: 100%;
 }
 .controls {
+  width: 100%;
+}
+.results {
+  margin-top: 1em;
+  width: 100%;
+}
+.half {
+  text-align: center;
   width: 50%;
+}
+.left {
   float: left;
 }
-img {
-  margin: 5em;
-  border: 1px solid black;
+.right {
+  float: right;
 }

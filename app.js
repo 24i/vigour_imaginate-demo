@@ -39,17 +39,6 @@ module.exports = exports = {
         }
       }
     },
-    known: {
-      tag: 'p',
-      title: {
-        tag: 'strong',
-        text: 'Known transforms: '
-      },
-      list: {
-        tag: 'span',
-        text: 'ctx-identity, ctw-resize'
-      }
-    },
     transforms: {
       tag: 'textarea',
       class: 'input',
@@ -75,20 +64,29 @@ module.exports = exports = {
       }
     }
   },
-  original: {
-    tag: 'img',
-    props: {
-      src: {
-        $: '$root.input'
+  results: {
+    class: 'results',
+    left: {
+      class: ['half', 'left'],
+      original: {
+        tag: 'img',
+        props: {
+          src: {
+            $: '$root.input'
+          }
+        }
       }
-    }
-  },
-  img: {
-    tag: 'img',
-    props: {
-      src: {
-        $: ['$root.imaginator', '$root.input', '$root.transforms'],
-        $transform: toUrl
+    },
+    right: {
+      class: ['half', 'right'],
+      img: {
+        tag: 'img',
+        props: {
+          src: {
+            $: ['$root.imaginator', '$root.input', '$root.transforms'],
+            $transform: toUrl
+          }
+        }
       }
     }
   }
