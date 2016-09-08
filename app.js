@@ -54,6 +54,13 @@ module.exports = exports = {
         }
       }
     },
+    transformsError: {
+      tag: 'p',
+      class: 'transformsError',
+      text: {
+        $: 'transformsError'
+      }
+    },
     url: {
       tag: 'input',
       props: {
@@ -93,8 +100,20 @@ module.exports = exports = {
 }
 
 function toUrl (state) {
-  return urlinate(state.imaginator.val, {
-    input: state.input.val,
-    use: JSON.parse(state.transforms.val)
-  })
+  var error
+  try {
+    var json = JSON.parse(state.transforms.val)
+  } catch (e) {
+    error = e.toString()
+  }
+  if (error) {
+    state.set({ transformsError: error })
+    return ''
+  } else {
+    state.set({ transformsError: null })
+    return urlinate(state.imaginator.val, {
+      input: state.input.val,
+      use: json
+    })
+  }
 }

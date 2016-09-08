@@ -18,5 +18,8 @@ module.exports = exports = createState({
   }]
 ]
 `
+  },
+  transformsError: {
+    val: ''
   }
 })

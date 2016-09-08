@@ -9,6 +9,9 @@ textarea {
 .controls {
   width: 100%;
 }
+.transformsError {
+  height: 3em;
+}
 .results {
   margin-top: 1em;
   width: 100%;
