@@ -1,6 +1,6 @@
 {
   "name": "imaginate-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "imaginator demo",
   "bin": {
     "demo": "bin/demo"
@@ -72,7 +72,5 @@
       ]
     ]
   },
-  "engines": {
-
-  }
+  "engines": {}
 }
