@@ -7,7 +7,7 @@ module.exports = exports = createState({
     val: 'http://localhost:3000'
   },
   input: {
-    val: 'http://www.birdchannel.com/images/articles/bird-word-of-day/word-of-day-flock.jpg'
+    val: 'http://yeshoua.net/wp-content/uploads/2015/10/agneau.jpg'
   },
   transforms: {
     val: `
